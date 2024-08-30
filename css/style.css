@@ -1,0 +1,338 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container {
+    height: 160vh;
+    /* width: 100%; */
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.container .container-one {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(37, 37, 37, 0.589);
+    background-image: url('../images/Untitled-1.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* navbar start */
+
+.container .container-one header {
+    height: 15%;
+    width: 100%;
+    /* background-color: blue; */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.724);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container-one header nav {
+    height: 80%;
+    width: 75%;
+    /* background-color: rgb(255, 0, 166); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow: hidden; */
+    /* position: relative;
+    overflow: hidden; */
+}
+
+.container .container-one header nav .con-one {
+    height: 90%;
+    width: 30%;
+    /* background-color: rgb(123, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 7px;
+    
+}
+
+.container .container-one header nav .con-one i {
+    font-size: 30px;
+    color: white;
+}
+
+.container .container-one header nav .con-one h1 {
+    font-size: 28px;
+    color: white;
+}
+
+
+.container .container-one header nav .con-two {
+    height: 90%;
+    width: 5%;
+    /* background-color: rgb(0, 157, 255); */
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+    flex-direction: row-reverse;
+}
+.container .container-one header nav .con-two i {
+    font-size: 30px;
+    color: white;
+}
+.check-label{
+    display: block;
+}
+.container .container-one header nav .con-two ul li{
+    font-size: 20px;
+    list-style-type:none;
+    font-weight: 500;
+    color: white;
+    background-color:rgba(80, 79, 79, 0.475);
+    padding: 15px 40px 20px 40px;
+} 
+.container #checkbtn{
+    display: none;
+}
+.container .container-one header nav .con-two ul{
+height: auto;
+width: auto;
+/* width: 100%; */
+position: absolute;
+top: 85px;
+right: -100%; 
+transition: 0.7s;
+z-index: 1000000;
+/* background-color: lightblue; */
+} 
+#checkbtn:checked ~ ul{
+    right:12.5%;  
+}
+
+/* navbar ends */
+
+
+
+
+
+
+/* main start */
+.container .container-one main {
+    height: 90%;
+    width: 75%;
+    background-color: rgb(226, 119, 119);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.container .container-one main .main-con {
+    height: 70%;
+    width: 60%;
+    background-color: rgb(119, 212, 226);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-flow: column;
+    gap: 10px;
+}
+.container .container-one main .main-con .small-text{
+height: 15%;
+width: 50%;
+background-color: brown;
+display: flex;
+align-items: start;
+justify-content: center;
+flex-flow: column;
+/* gap: 10px;    */
+}
+.container .container-one main .main-con .small-text p{
+   font-size: 16px;
+   color: white;
+   font-weight: 400;
+   background-color: blue;
+   text-align: justify;
+   line-height: 30px;
+
+}
+.container .container-one main .main-con .small-text .dash{
+    height: 5%;
+    width: 12%;
+    border-radius: 3px;
+    background-color: white;
+}
+.container .container-one main .main-con .text-con{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(4, 53, 37);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-flow: column;
+}
+.container .container-one main .main-con .text-con h1{
+    font-size: 46px;
+    color: white;
+}
+.container .container-one main .main-con .text-con p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.container .container-one main .main-con .about{
+    height: 15%;
+    width: 100%;
+    background-color: aqua;
+}
+.container .container-one main .main-con .about p{
+    font-weight: 400;
+    color: white;
+}
+.container .container-one main .main-con .icon{
+    height: 10%;
+    width: 30%;
+    background-color: chartreuse ;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+}
+.container .container-one main .main-con .icon a{
+    color: white;
+   text-decoration: none;
+}
+.container .container-one main .main-con .icon a .circle{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(113, 111, 111, 0.409);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.container .container-one main .main-con .btn-con{
+    height: 15%;
+    width: 50%;
+    background-color: fuchsia;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    gap: 10px;
+}
+.container .container-one main .main-con .btn-con button:nth-child(1){
+    height: 70%;
+    width: 40%;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 5px;
+}
+.container .container-one main .main-con .btn-con button:nth-child(2){
+    height: 70%;
+    width: 40%;
+    border: 2px solid white;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+/* main end */
+/* container two start */
+.container .container-two{
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container-two .skills{
+    height: 140%;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(24, 24, 24, 0.564);
+    border-radius: 15px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.container .container-two .skills .skill-heading{
+    height: 25%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    border-bottom: 3px solid rgba(105, 102, 102, 0.445);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+.container .container-two .skills .skill-con{
+    height: 75%;
+    width: 80%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.container .container-two .skills .skill-con .con-one{
+    height: 40%;
+    width: 16%;
+    /* background-color: chartreuse; */
+    position: relative;
+    bottom: 10px;
+}
+.container .container-two .skills .skill-con .con-one img{
+    height: 100%;
+    width: 100%;
+}
+/* container two end */
+/* footer start */
+footer{
+    height: 12%;
+    width: 100%;
+    background-color:rgb(80, 79, 79);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+}
+footer p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 18px;
+}
+/* footer end */
+
+/* media query */
+@media only screen and (max-width: 1000){
+    .container .container-one main .main-con {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(119, 226, 158);
+    }
+}
